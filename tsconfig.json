@@ -15,7 +15,15 @@
     "resolveJsonModule": true,
     "strict": true,
     "strictPropertyInitialization": false,
-    "useDefineForClassFields": true
+    "useDefineForClassFields": true,
+    "paths": {
+      "@config/*": ["src/config/*"],
+      "@domains/*": ["src/domains/*"],
+      "@models/*": ["src/models/*"],
+      "@utils/*": ["src/utils/*"],
+      "@typings": ["src/types"],
+      "__test__/*": ["__test__/*"]
+    }
   },
   "exclude": ["node_modules"],
   "extends": "@tsconfig/recommended",
